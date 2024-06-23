@@ -10,8 +10,7 @@ const ImagesBar = () => {
   const importImages = async () => {
     const imageModules = import.meta.glob(`../../assets/chaosSession/*`);
     const importedImages = await Promise.all(
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      Object.entries(imageModules).map(async ([path, importer]) => {
+      Object.entries(imageModules).map(async ([, importer]) => {
         const module = await importer();
         return (module as any).default;
       })
