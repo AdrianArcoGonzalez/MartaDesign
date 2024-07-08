@@ -13,6 +13,7 @@ function App() {
         <Route path="/portfolio" element={<h1>Portfolio</h1>} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<h1>Contact</h1>} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </AppStyled>
   );

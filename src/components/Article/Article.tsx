@@ -16,16 +16,29 @@ const Article = ({ article }: Props) => {
         <div className="header">
           <span>{article.title}</span>
         </div>
-        <p className="text">{article.text}</p>
+        <p className="text-white">{article.text}</p>
       </div>
 
       <div className="rightSide">
-        <img
-          height={150}
-          width={150}
-          className="image"
-          src={article.image.url}
-        />
+        <div className="header">
+          <span>CHAOS</span>
+        </div>
+        <p className="text">
+          Una colección con un poco de locura mezclando volúmenes y estampados.
+          Sobreponiendo capas para crear una estética de lo más curiosa.
+          Intentando buscando a cada momento un toque de locura. Diseñada para
+          espíritus l ibres, CHAOS es mucho más que una simple l ínea de ropa;
+          es una expresión artística que desafía las convenciones y celebra la
+          belleza en el caos. Esta colección fusiona volúmenes, estampados y
+          texturas de una manera alternativa, cada prenda cuenta su propia
+          historia visual, creando una estética de lo más curiosa. La paleta de
+          colores junto con estampados contratantes, define la identidad visual
+          de CHAOS. … Un mundo donde el caos se convierte en arte… No es solo
+          una colección de moda; es una declaración de autenticidad. Descubre la
+          magia de CHAOS y sumérgete en un viaje donde la moda se convierte en
+          una expresión de l ibertad y belleza en su forma más caótica y
+          encantadora. Marta Calvo
+        </p>
       </div>
     </ArticleStyled>
   );
@@ -33,16 +46,20 @@ const Article = ({ article }: Props) => {
 
 const ArticleStyled = styled.article`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+
+  height: fit-content;
+  @media (min-width: 350px) {
+    flex-direction: row;
+    height: auto;
+  }
 
   .leftSide {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: space-between; */
     flex: 1;
     height: 100%;
     background-color: #000000;
@@ -76,9 +93,28 @@ const ArticleStyled = styled.article`
   }
 
   .text {
-    height: 200px;
+    font-size: 0.8 rem;
+    min-height: 250px;
     max-width: 100%;
     text-align: center;
+    text-align: left;
+    padding: 20px;
+
+    &-white {
+      font-size: 0.8 rem;
+      min-height: 250px;
+      max-width: 100%;
+      text-align: center;
+      text-align: left;
+      padding: 20px;
+      color: white;
+      @media (min-width: 750px) {
+        min-height: 480px;
+      }
+    }
+    @media (min-width: 750px) {
+      min-height: 480px;
+    }
   }
 `;
 

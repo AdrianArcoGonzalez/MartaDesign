@@ -31,7 +31,7 @@ const ImagesBar = () => {
         centerMode
         className="imagesCarrousel"
         showIndicators={false}
-        stopOnHover
+        stopOnHover={true}
         showThumbs={false}
       >
         {images.map((image: string) => (
@@ -51,25 +51,23 @@ const ImagesBar = () => {
 };
 
 const ImagesBarStyled = styled.section`
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  /* .imagesCarrousel {
-    max-width: 100%;
-    height: auto;
-  } */
+  min-height: 350px;
+
+  .imagesCarrousel {
+    @media (min-width: 750px) {
+      width: 50%;
+    }
+  }
   .listItem {
     margin: 0px;
     width: 100%;
     padding: 0;
     height: auto;
+    max-width: 1450px;
   }
 
   .image {
