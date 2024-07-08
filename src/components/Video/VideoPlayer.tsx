@@ -12,7 +12,6 @@ const VideoPlayer = () => {
         autoPlay={true}
         loop={true}
         controls={false}
-        muted
       />
     </VideoStyled>
   );
