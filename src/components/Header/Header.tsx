@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const headerConfig = [
@@ -6,9 +6,9 @@ const headerConfig = [
     label: "Home",
     url: "/home",
   },
-  { label: "About", url: "/about" },
-  { label: "Contact", url: "/contact" },
   { label: "Portfolio", url: "/portfolio" },
+  { label: "Contact", url: "/contact" },
+  { label: "About", url: "/about" },
 ];
 
 const Header = () => {
@@ -18,14 +18,14 @@ const Header = () => {
       <ul className="list">
         {headerConfig.map((item) => (
           <li key={item.label} className="listItem">
-            <a
-              href={item.url}
+            <Link
+              to={item.url}
               className={
                 pathname === item.url.toLowerCase() ? "linkSelected" : "link"
               }
             >
               {item.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
