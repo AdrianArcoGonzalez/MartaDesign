@@ -11,7 +11,6 @@ const VideoPlayer = () => {
         width={100}
         autoPlay
         loop={true}
-        muted
         controls={false}
         playsInline
       />
