@@ -6,6 +6,7 @@ const headerConfig = [
     label: "Home",
     url: "/home",
   },
+  { label: "Gallery", url: "/gallery" },
   { label: "Portfolio", url: "/portfolio" },
   { label: "Contact", url: "/contact" },
   { label: "About", url: "/about" },
@@ -43,6 +44,7 @@ const HeaderStyled = styled.header`
   height: 60px;
 
   .list {
+    flex-wrap: wrap;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -52,13 +54,15 @@ const HeaderStyled = styled.header`
   }
 
   .listItem {
-    margin: 0px;
+    margin: 0;
     padding: 0;
+    padding-bottom: 10px;
   }
 
   .link {
-    padding: 10px;
+    padding: 15px;
     color: #000000;
+
     text-decoration: underline;
   }
   .linkSelected {

@@ -26,7 +26,7 @@ const VideoStyled = styled.div`
   align-items: center;
 
   .video {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     height: auto;
     display: flex;
@@ -39,7 +39,7 @@ const VideoStyled = styled.div`
     min-width: 300px;
     min-height: 300px;
 
-    @media (min-width: 450px) {
+    @media (min-width: 750px) {
       height: 400px;
       width: auto;
       background-color: black;

@@ -20,6 +20,7 @@ const ImagesBar = () => {
   useEffect(() => {
     importImages();
   }, []);
+
   return (
     <ImagesBarStyled>
       <Carousel
@@ -28,14 +29,36 @@ const ImagesBar = () => {
         infiniteLoop
         interval={4000}
         autoPlay
-        centerMode
-        className="imagesCarrousel"
+        className="imagesCarrouselMobile"
         showIndicators={false}
         stopOnHover={true}
         showThumbs={false}
       >
         {images.map((image: string) => (
-          <div className="listItem" key={image}>
+          <div key={image}>
+            <img
+              about={image}
+              className="image"
+              src={image}
+              height={50}
+              width={50}
+            />
+          </div>
+        ))}
+      </Carousel>
+      <Carousel
+        showStatus={false}
+        showArrows
+        infiniteLoop
+        interval={4000}
+        autoPlay
+        className="imagesCarrousel"
+        showIndicators
+        stopOnHover={true}
+        thumbWidth={100}
+      >
+        {images.map((image: string) => (
+          <div key={image}>
             <img
               about={image}
               className="image"
@@ -57,21 +80,30 @@ const ImagesBarStyled = styled.section`
   width: 100%;
   min-height: 350px;
 
-  .imagesCarrousel {
-    @media (min-width: 750px) {
-      width: 50%;
-    }
-  }
-  .listItem {
-    margin: 0px;
+  @media (min-width: 750px) {
+    max-width: 1040px;
     width: 100%;
-    padding: 0;
-    height: auto;
-    max-width: 1450px;
   }
 
+  .imagesCarrouselMobile {
+    display: block;
+    max-width: 100%;
+
+    @media (min-width: 750px) {
+      display: none;
+    }
+  }
+
+  .imagesCarrousel {
+    display: block;
+    max-width: 100%;
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
   .image {
-    height: 340px;
+    height: auto;
+    max-height: 320px;
     object-fit: contain;
     object-position: center;
     aspect-ratio: 1 / 1;

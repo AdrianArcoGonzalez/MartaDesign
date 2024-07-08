@@ -20,7 +20,7 @@ const Article = ({ article }: Props) => {
       </div>
 
       <div className="rightSide">
-        <div className="header">
+        <div className="header-white">
           <span>CHAOS</span>
         </div>
         <p className="text">
@@ -50,9 +50,10 @@ const ArticleStyled = styled.article`
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  max-width: 100%;
   height: fit-content;
-  @media (min-width: 350px) {
+
+  @media (min-width: 750px) {
     flex-direction: row;
     height: auto;
   }
@@ -82,6 +83,16 @@ const ArticleStyled = styled.article`
     align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+
+    &-white {
+      color: black;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
   }
 
   .image {
@@ -95,23 +106,24 @@ const ArticleStyled = styled.article`
   .text {
     font-size: 0.8 rem;
     min-height: 250px;
-    max-width: 100%;
     text-align: center;
     text-align: left;
     padding: 20px;
+    color: black;
 
     &-white {
       font-size: 0.8 rem;
       min-height: 250px;
-      max-width: 100%;
       text-align: center;
       text-align: left;
       padding: 20px;
       color: white;
+
       @media (min-width: 750px) {
         min-height: 480px;
       }
     }
+
     @media (min-width: 750px) {
       min-height: 480px;
     }
