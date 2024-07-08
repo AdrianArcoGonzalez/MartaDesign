@@ -43,10 +43,12 @@ const GalleryPage = () => {
 const GalleryPageStyled = styled.div`
   display: flex;
   padding-top: 40px;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 40px;
   flex-direction: column;
 
   .list {
@@ -54,6 +56,7 @@ const GalleryPageStyled = styled.div`
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

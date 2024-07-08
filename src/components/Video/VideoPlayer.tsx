@@ -22,14 +22,15 @@ const VideoPlayer = () => {
 const VideoStyled = styled.div`
   background-color: #000000;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .video {
     object-fit: contain;
-    object-position: center;
     height: auto;
+    object-position: center;
     display: flex;
     justify-content: center;
     align-items: center;

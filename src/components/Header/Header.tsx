@@ -6,9 +6,9 @@ const headerConfig = [
     label: "Home",
     url: "/home",
   },
-  { label: "Gallery", url: "/gallery" },
   { label: "Portfolio", url: "/portfolio" },
   { label: "Contact", url: "/contact" },
+  { label: "Gallery", url: "/gallery" },
   { label: "About", url: "/about" },
 ];
 
@@ -16,9 +16,9 @@ const Header = () => {
   const { pathname } = useLocation();
   return (
     <HeaderStyled>
-      <ul className="list">
+      <ul className="headerList">
         {headerConfig.map((item) => (
-          <li key={item.label} className="listItem">
+          <li key={item.label} className="headerlistItem">
             <Link
               to={item.url}
               className={
@@ -41,35 +41,42 @@ const HeaderStyled = styled.header`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
 
-  .list {
+  .headerList {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     padding: 0;
     margin: 0;
   }
 
-  .listItem {
+  .headerlistItem {
     margin: 0;
     padding: 0;
-    padding-bottom: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .link {
-    padding: 15px;
-    color: #000000;
-
-    text-decoration: underline;
-  }
-  .linkSelected {
     padding: 10px;
     color: #000000;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1px;
+  }
+
+  .linkSelected {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    color: #000000;
   }
 `;

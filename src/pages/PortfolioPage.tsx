@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import Header from "../components/Header/Header";
 
-const AboutPage = () => {
+const PortfolioPage = () => {
   return (
-    <AboutPageStyled>
+    <PortfolioPageStyled>
       <Header />
-    </AboutPageStyled>
+    </PortfolioPageStyled>
   );
 };
 
-const AboutPageStyled = styled.div`
+const PortfolioPageStyled = styled.div`
   height: 100%;
   width: 100%;
   padding-top: 40px;
@@ -18,4 +18,4 @@ const AboutPageStyled = styled.div`
   align-items: center;
   justify-content: flex-start;
 `;
-export default AboutPage;
+export default PortfolioPage;
