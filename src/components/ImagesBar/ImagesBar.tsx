@@ -81,7 +81,6 @@ const ImagesBarStyled = styled.section`
   min-height: 350px;
 
   @media (min-width: 750px) {
-    max-width: 1040px;
     width: 100%;
   }
 
