@@ -17,9 +17,8 @@ const AboutPage = () => {
         </p>
         <h3>Formación y Experiencia</h3>
         <p>
-          Me gradué con honores de ICModa en Barcelona, donde tuve la
-          oportunidad de aprender de algunos de los mejores profesionales de la
-          industria.
+          Me gradué en ICModa en Barcelona, donde tuve la oportunidad de
+          aprender de algunos de los mejores profesionales de la industria.
         </p>
         <h3>Mi Filosofía de Diseño</h3>
         <p>
