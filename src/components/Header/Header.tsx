@@ -41,11 +41,11 @@ const HeaderStyled = styled.header`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: auto;
 
   .list {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     display: flex;
     list-style: none;
     justify-content: center;
