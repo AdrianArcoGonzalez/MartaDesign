@@ -7,6 +7,8 @@ const headerConfig = [
     url: "/home",
   },
   { label: "Portfolio", url: "/portfolio" },
+
+  { label: "Fashion Film", url: "/fashionFilm" },
   { label: "Contact", url: "/contact" },
   { label: "Gallery", url: "/gallery" },
   { label: "About", url: "/about" },

@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import GalleryPage from "./pages/GalleryPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
+import FasionFilmPage from "./pages/FashionFilmPage";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/fashionFilm" element={<FasionFilmPage />} />
+
           <Route
             path="*"
             element={
