@@ -34,5 +34,6 @@ const HomePageStyled = styled.div`
   gap: 20px;
   margin-bottom: 20px;
   max-width: 100%;
+  margin-bottom: 40px;
 `;
 export default HomePage;

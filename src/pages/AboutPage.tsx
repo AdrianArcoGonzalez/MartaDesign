@@ -59,7 +59,7 @@ const AboutPageStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
+  margin-bottom: 40px;
   .info {
     padding-top: 20px;
     display: flex;

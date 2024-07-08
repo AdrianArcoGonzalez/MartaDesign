@@ -29,7 +29,8 @@ const FasionFilmPageStyled = styled.div`
   gap: 20px;
   height: 100%;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+
   .video {
     height: 300px;
     aspect-ratio: 1/1;

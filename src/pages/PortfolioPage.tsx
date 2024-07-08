@@ -49,8 +49,8 @@ const PortfolioPageStyled = styled.div`
   gap: 20px;
   height: 100%;
   width: 100%;
-  margin-bottom: 40px;
   flex-direction: column;
+  margin-bottom: 40px;
 
   .list {
     list-style: none;

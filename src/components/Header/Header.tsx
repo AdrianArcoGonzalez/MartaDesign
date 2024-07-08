@@ -23,9 +23,7 @@ const Header = () => {
           <li key={item.label} className="headerlistItem">
             <Link
               to={item.url}
-              className={
-                pathname === item.url.toLowerCase() ? "linkSelected" : "link"
-              }
+              className={pathname === item.url ? "linkSelected" : "link"}
             >
               {item.label}
             </Link>
