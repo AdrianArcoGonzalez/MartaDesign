@@ -25,8 +25,9 @@ function App() {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  height: 400,
+                  height: 500,
                   width: "100vw",
+                  padding: "20px",
                 }}
               >
                 <h1>Esta página no existe</h1>
