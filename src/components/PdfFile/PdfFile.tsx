@@ -25,24 +25,6 @@ const PdfViewer = () => {
     importImages();
   }, []);
 
-  // function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-  //   console.log(numPages);
-  //   setNumPages(numPages);
-  // }
-
-  // const importAll = (r: any) => {
-  //   const images: any = {};
-  //   r.keys().forEach((item) => {
-  //     images[item.replace("./", "")] = r(item);
-  //   });
-  //   return images;
-  // };
-
-  // // Almacena las imágenes importadas en una variable
-  // const images = importAll(
-  //   require.context("../../assets/test", false, /\.(png|jpe?g|svg)$/)
-  // );
-
   return (
     <PdfSectionStyled>
       <img
