@@ -11,6 +11,8 @@ const VideoPlayer = () => {
         width={100}
         autoPlay={true}
         loop={true}
+        muted
+        onClick={() => {}}
         controls={false}
       />
     </VideoStyled>
