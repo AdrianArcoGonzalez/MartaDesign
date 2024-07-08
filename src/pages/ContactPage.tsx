@@ -10,7 +10,6 @@ const ContactPage = () => {
           <p className="text">
             Quieres saber más sobre mis trabajos? Envíame un correo electrónico
           </p>
-          <p className="text">Envíame un correo electrónico</p>
         </article>
         <article>
           <span className="text">calvofernandezmarta@gmail.com</span>
