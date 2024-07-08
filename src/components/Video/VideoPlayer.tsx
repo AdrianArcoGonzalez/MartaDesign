@@ -9,10 +9,11 @@ const VideoPlayer = () => {
         src={video}
         height={100}
         width={100}
-        autoPlay
+        autoPlay={true}
         loop={true}
-        controls={false}
+        muted
         playsInline
+        controls={false}
       />
     </VideoStyled>
   );
