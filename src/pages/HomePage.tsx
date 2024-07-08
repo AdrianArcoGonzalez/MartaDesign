@@ -10,8 +10,8 @@ const HomePage = () => {
       url: nota,
       label: "fashion",
     },
-    title: "Fashion Article",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ",
+    title: "",
+    text: "",
   };
 
   return (

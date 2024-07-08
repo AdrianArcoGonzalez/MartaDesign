@@ -63,10 +63,13 @@ const ArticleStyled = styled.article`
     flex-direction: column;
     flex: 1;
     height: 100%;
+    width: 100%;
     background-color: #000000;
     border: 1px solid black;
+    @media (min-width: 750px) {
+      width: 50%;
+    }
   }
-
   .rightSide {
     display: flex;
     flex-direction: column;
@@ -113,7 +116,7 @@ const ArticleStyled = styled.article`
 
     &-white {
       font-size: 0.8 rem;
-      min-height: 250px;
+      min-height: 50px;
       text-align: center;
       text-align: left;
       padding: 20px;
