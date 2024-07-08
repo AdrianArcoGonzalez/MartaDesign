@@ -13,6 +13,7 @@ const VideoPlayer = () => {
         loop={true}
         muted
         controls={false}
+        playsInline
       />
     </VideoStyled>
   );
