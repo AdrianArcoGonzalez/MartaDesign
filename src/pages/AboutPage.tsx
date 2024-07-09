@@ -43,7 +43,7 @@ const AboutPage = () => {
         <p>
           Mi misión es dejar una huella en el mundo de la moda a través de
           diseños que celebren la individualidad y la innovación. Estoy
-          emocionada por lo que el futuro depara y ansiosa por contribuir con mi
+          emocionada por lo que el futuro depara. Ansiosa por contribuir con mi
           visión única al vibrante universo de la moda.
         </p>
       </section>

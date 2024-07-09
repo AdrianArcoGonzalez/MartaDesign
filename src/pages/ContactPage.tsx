@@ -12,7 +12,7 @@ const ContactPage = () => {
           </p>
         </article>
         <article>
-          <span className="text">calvofernandezmarta@gmail.com</span>
+          <span className="text">calvofernandez.marta@gmail.com</span>
         </article>
       </section>
     </ContactPageStyled>

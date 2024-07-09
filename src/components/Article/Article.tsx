@@ -26,7 +26,7 @@ const Article = ({ article }: Props) => {
         <p className="text">
           Una colección con un poco de locura mezclando volúmenes y estampados.
           Sobreponiendo capas para crear una estética de lo más curiosa.
-          Intentando buscando a cada momento un toque de locura. Diseñada para
+          Intentando buscar a cada momento un toque de locura. Diseñada para
           espíritus l ibres, CHAOS es mucho más que una simple l ínea de ropa;
           es una expresión artística que desafía las convenciones y celebra la
           belleza en el caos. Esta colección fusiona volúmenes, estampados y
